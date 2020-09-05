@@ -1,0 +1,44 @@
+.no-case {
+  text-align: center;
+  padding: 7% 12%;
+  height: 100vh;
+  background-color: green;
+  color: limegreen;
+  display: none;
+}
+
+.content {
+  padding: 3%;
+}
+
+.bad {
+  text-align: center;
+  padding: 7% 12%;
+  height: 100vh;
+  background-color: orange;
+  color: orangered;
+  display: none;
+}
+
+.worst {
+  text-align: center;
+  padding: 7% 12%;
+  height: 100vh;
+  background-color: red;
+  color: darkred;
+  display: none;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 5% 7%;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.footer-links {
+  padding: 0px 8px;
+}
+

@@ -1,0 +1,49 @@
+.body {
+  text-align: center;
+}
+
+.row {
+  padding: 2% 7% 5%;
+  margin: 0;
+  text-align: center;
+}
+
+.intro {
+  padding: 10% 7% 5%;
+  text-align: center;
+}
+
+.line-card {
+  border-style: none;
+  border-top-style: dashed;
+  border-width: 2px;
+  border-color: gray;
+}
+
+/* Footer */
+
+footer {
+  padding: 5% 7%;
+  background-color: skyblue;
+  text-align: center;
+}
+
+.footer-links {
+  padding: 0px 8px;
+}
+
+
+
+@media (max-width: 700px) {
+  .intro {
+    padding: 15% 7% 5%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro {
+    padding: 25% 7% 5%;
+    text-align: center;
+  }
+}

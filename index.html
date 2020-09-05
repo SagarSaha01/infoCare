@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>infoCare</title>
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" href="font-awesome/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="shortcut icon" type="image/png"
+    href="https://emottawablog.com/wp-content/uploads/2018/09/iStock-Heart.png">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+  <style>
+    #map {
+      height: 500px;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- Navbar Contents -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+    <img src="https://emottawablog.com/wp-content/uploads/2018/09/iStock-Heart.png" alt="logo" height="50px"
+      style="margin-right: 15px;">
+    <a class="navbar-brand" href="index.html">infoCare</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="count.html">Community Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tips.html">Health Tips</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="socialize.html">Socialize</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donate.html">Donate</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Body Contents -->
+
+  <div class="row red">
+    <div class="col-md-8 top-section-left">
+      <h1>Hello!</h1>
+      <h3>How are you feeling today?</h3>
+      <div class="con">
+        <i class="fas fa-star" id="s1"></i>
+        <i class="fas fa-star" id="s2"></i>
+        <i class="fas fa-star" id="s3"></i>
+        <i class="fas fa-star" id="s4"></i>
+        <i class="fas fa-star" id="s5"></i>
+        <br><br>
+        <a class="report" style="display: none;" id="happy" href="count.html"><i
+            style="color: mediumseagreen; display: inline" class="fas fa-smile fa-2x"></i>
+          <h6
+            style="display: inline; font-size: 20px; margin-left: 10px;color: mediumaquamarine; text-decoration: none;">
+            Safe: There are no health concerns in your community right now!</h6>
+        </a>
+        <a class="report" display: none; id="warning" href="count.html"> <i style="color: orange; display: inline;"
+            class="fas fa-exclamation-triangle fa-2x"></i>
+          <h6 style="display: inline; font-size: 20px; margin-left: 10px; color: orange; text-decoration: none;">
+            Warning: A couple of people in your community reported covid-19 symptoms.</h6>
+        </a>
+        <a class="report" id="danger" style="display: none;" href="count.html"> <i
+            style="color: darkred; display: inline;" class="fas fa-exclamation-circle fa-2x"></i>
+          <h6 style="display: inline; font-size: 20px; margin-left: 10px; color: darkred; text-decoration: none;">
+            Danger: There is a covid-19 outbreak in your neighbourhood.</h6>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 top-section-right">
+      <div class="bad">
+        <a class="btn btn-dark" href="#self-check">Self-check some covid-19 symptoms</a>
+        <br>
+        <a class="btn btn-dark" id="hospital-btn" href="#hospital">Contact a Hospital</a>
+        <h5>“I fight for my health every day in ways that most people don’t understand. I’m not lazy. I’m a warrior!”
+        </h5>
+      </div>
+      <div class="good">
+        <a class="btn btn-dark" style="margin-bottom: 25px;" href="#self-check">Self-check some covid-19 symptoms</a>
+        <h5 style="padding-bottom: 10px;">Drink More Water! Staying hyrdrated is one of the best way to stay healthy!
+        </h5>
+        <h5>"Water is the Best Natural Remedy. Drink Your Way to Better Health."</h5>
+      </div>
+      <div class="excellent">
+        <h4>Good to know that!</h4>
+        <h4>Stay Safe, Stay Strong</h4>
+        <h5>“All our dreams can come true, if we have the courage to pursue them.”</h5>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="padding: 5% 7%; background-color: cornsilk; margin: 0;">Stay Updated With Latest Covid-19 News</h3>
+  <div class="row section-2">
+    <div class="rss-feed col-md-5" id="rss">
+      <h4>Latest Updates on Covid-19</h4>
+
+      <!-- RSS Feed Content -->
+
+      <!-- start sw-rss-feed code -->
+
+      <script type="text/javascript">
+        rssfeed_url = new Array();
+        rssfeed_url[0]="https://rss.app/feeds/24FKjOMsGheE6947.xml";  
+        rssfeed_frame_width = document.getElementById("rss").offsetWidth;
+        rssfeed_frame_height = "500";
+        rssfeed_scroll = "off";
+        rssfeed_scroll_step = "5";
+        rssfeed_scroll_bar = "on";
+        rssfeed_target = "_blank";
+        rssfeed_font_size = "18";
+        rssfeed_font_face = "";
+        rssfeed_border = "on";
+        rssfeed_css_url = "";
+        rssfeed_title = "on";
+        rssfeed_title_name = "Latest Covid-19 News";
+        rssfeed_title_bgcolor = "#3366ff";
+        rssfeed_title_color = "#fff";
+        rssfeed_title_bgimage = "";
+        rssfeed_footer = "off";
+        rssfeed_footer_name = "rss feed";
+        rssfeed_footer_bgcolor = "#fff";
+        rssfeed_footer_color = "#333";
+        rssfeed_footer_bgimage = "";
+        rssfeed_item_title_length = "50";
+        rssfeed_item_title_color = "#666";
+        rssfeed_item_bgcolor = "#fff";
+        rssfeed_item_bgimage = "";
+        rssfeed_item_border_bottom = "on";
+        rssfeed_item_source_icon = "off";
+        rssfeed_item_date = "on";
+        rssfeed_item_description = "on";
+        rssfeed_item_description_length = "120";
+        rssfeed_item_description_color = "#666";
+        rssfeed_item_description_link_color = "#333";
+        rssfeed_item_description_tag = "off";
+        rssfeed_no_items = "0";
+        rssfeed_cache = "7b6ac94d730ccc91ece9dc4a87427f16"; 
+      </script>
+      <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+      <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
+      <div style="color:#ccc;font-size:10px; text-align:left; width:230px;">powered by <a
+          href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a></div>
+
+      <!-- end sw-rss-feed code -->
+
+    </div>
+    <div class="rss-right col-md-6">
+      <h4>Latest Interactive Map on Covid-19</h4>
+      <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map&region=World" width="90%"
+        height="500px"></iframe>
+    </div>
+  </div>
+
+  <div class="section-3" id="self-check">
+    <div class="row">
+      <div col-md-6>
+        <h2>Covid-19 Symptoms Self-Check</h2>
+        <h4>Here are some common Covid-19 symptoms.</h4>
+        <div class="common-symptoms">
+          <h5>Most Common Symptoms:</h5>
+          <ul>
+            <li>Fever</li>
+            <li>Dry Cough</li>
+            <li>Tiredness</li>
+          </ul>
+        </div>
+
+        <div class="more-symptoms">
+          <h5>Less Common Symptoms:</h5>
+          <ul>
+            <li>Aches and Pains</li>
+            <li>Soar Throat</li>
+            <li>Diarrhoea</li>
+            <li>Conjunctivitis</li>
+            <li>Headache</li>
+            <li>Loss of Taste or Smell</li>
+            <li>Rash on Skin, or discolouration of Fingers or Toes</li>
+          </ul>
+        </div>
+
+        <div class="serious-symptoms">
+          <h5>Serious Symptoms:</h5>
+          <ul>
+            <li>Difficulty Breathing or Shortness of Breath</li>
+            <li>Chest Pain or Pressure</li>
+            <li>Loss of Speech or Movement</li>
+          </ul>
+        </div>
+        <br>
+        <h6>Do you have any of these Covid-19 symptoms?</h6>
+        <button class="btn btn-outline-primary btn-yes-no btn-yes" id="count">Yes</button>
+        <button class="btn btn-outline-primary btn-yes-no btn-no" href="#">No</button>
+        <h5 style="display: none;" id="thanks">Thanks for Submitting!</h5>
+        <h5 style="display: none;" id="response">Your Response Has Been Recorded.</h5>
+      </div>
+      <div class="col-md-6 yes">
+        <h3>Make sure you do the following things:</h3>
+        <h5>Isolate yourself at home for 14 days to avoid spreading it to others.</h5>
+        <h5>Visit a health care professional or call your local public health authority for information on getting
+          tested.</h5>
+        <h6>Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or
+          health facility.</h6>
+        <h6>People with mild symptoms who are otherwise healthy should manage their symptoms at home.</h6>
+        <h6>On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it
+          can take up to 14 days.</h6>
+        <a class="btn btn-primary" id="hospital-btn-1" href="#hospital">Contact a Hospital</a>
+      </div>
+      <div class="col-md-6 no">
+        <h4>Congratulations! You don't show any symptoms of Covid-19!</h4>
+        <h4>But still, don't forget to social distance, wear a mask, and wash your hands frequently.</h4>
+      </div>
+    </div>
+  </div>
+  <div class="hospital" id="hospital">
+    <h3>Here you can search and locate hospitals near you.</h3>
+    <a style="font-size: 1.5rem; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+      href="https://www.maps.google.com">View Full Map</a>
+    <div id="output">
+      <div id="map">
+        <script>
+          // Note: This example requires that you consent to location sharing when
+          // prompted by your browser. If you see the error "The Geolocation service
+          // failed.", it means you probably did not give permission for the browser to
+          // locate you.
+          var map, infoWindow;
+
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {
+                lat: -34.397,
+                lng: 150.644
+              },
+              zoom: 8
+            });
+            infoWindow = new google.maps.InfoWindow;
+
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(function (position) {
+                var pos = {
+                  lat: position.coords.latitude,
+                  lng: position.coords.longitude
+                };
+
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Location found.');
+                infoWindow.open(map);
+                map.setCenter(pos);
+              }, function () {
+                handleLocationError(true, infoWindow, map.getCenter());
+              });
+            } else {
+              // Browser doesn't support Geolocation
+              handleLocationError(false, infoWindow, map.getCenter());
+            }
+          }
+
+          function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+              'Error: The Geolocation service failed.' :
+              'Error: Your browser doesn\'t support geolocation.');
+            infoWindow.open(map);
+          }
+        </script>
+        <script defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS3iqLPqhiKJOfwpH1WNkVUvSAIhPNibA&callback=initMap">
+        </script>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="section-4">
+    <h2 class="to-do-heading">Organize Your Day</h2>
+    <h6 style="color: white; padding: 0% 10% 5%; text-align: center;">Sticking to a routine helps to automate tasks that
+      need to get done -- whether you dread them or not -- because doing something every single day will make your brain
+      happy and help to create good habits. Try this out by making a general plan for your day, stick to it for a week
+      and see the results.</h6>
+    <div class="inputDiv">
+      <input type="text" class="input" placeholder="What Do You Want to Do...">
+      <button class="add"><i class="fas fa-plus"></i></button>
+    </div>
+    <div class="container">
+    </div>
+  </div>
+
+  <!-- Footer Settings: -->
+
+  <footer>
+    <img src="https://emottawablog.com/wp-content/uploads/2018/09/iStock-Heart.png" alt="footer" height="80px">
+    <h4 style="padding: 10px;">infoCare</h4>
+    <a class="footer-links" href="index.html">Home</a>
+    <a class="footer-links" href="count.html">Community Reports</a>
+    <a class="footer-links" href="tips.html">Health Tips</a>
+    <a class="footer-links" href="socialize.html">Socialize</a>
+    <a class="footer-links" href="donate.html"> Donate</a>
+  </footer>
+
+
+  <!-- Bootstrap CDN Links -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  <!-- Javascript Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

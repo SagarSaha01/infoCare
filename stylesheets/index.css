@@ -1,0 +1,291 @@
+.red {
+  background-color: #ed2939;
+  color: black;
+}
+
+.row {
+  margin: 0;
+}
+
+.top-section-left {
+  padding: 8% 7% 5%;
+}
+
+.top-section-left h1 {
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+}
+
+.bad{
+  padding-top: 25%;
+  padding-bottom: 15%;
+  padding-left: 0%;
+  padding-right: 7%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: cyan;
+  text-align: center;
+  display: none;
+}
+
+.bad h5 {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.btn {
+  margin: 2% 0%;
+}
+
+.good{
+  padding-top: 25%;
+  padding-bottom: 3%;
+  padding-left: 0%;
+  padding-right: 7%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: cyan;
+  text-align: center;
+  display: none;
+}
+
+.excellent {
+  padding-top: 25%;
+  padding-bottom: 3%;
+  padding-left: 0%;
+  padding-right: 7%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: cyan;
+  text-align: center;
+  display: none;
+}
+
+.excellent h4 {
+  padding: 2% 0%;
+}
+
+.rss-feed {
+  padding: auto;
+  margin: 0px auto 5%;
+}
+
+.section-2 {
+  background-color: cornsilk;
+}
+
+.section-3 {
+  padding: 5% 7%;
+}
+
+.yes {
+  margin: auto;
+  display: none;
+}
+
+.yes h6, h5, h3 {
+  padding: 3% 0%;
+}
+
+.no {
+  margin: auto;
+  display: none;
+}
+
+.no h4 {
+  padding: 3% 0%;
+}
+
+.btn-yes-no {
+  padding: 5px 25px;
+  margin-right: 10px;
+  margin-top: 20px;         
+}
+
+#output {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 3% 0% 7%;
+}
+
+.hospital {
+  background-color: bisque;
+  text-align: center;
+  display: none;
+}
+
+.report:hover {
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  padding: 5% 7%;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.footer-links {
+  padding: 0px 8px;
+}
+
+
+
+/* Section-4 TODO list */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-4{
+  background-color: #111;
+  box-sizing: border-box;
+}
+
+.to-do-heading {
+color: #fff;
+font-size: 3rem;
+font-weight: 50;
+text-align: center;
+padding: 5% 7% 2%;
+font-family: 'Hind', sans-serif;
+}
+
+.inputDiv{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.input{
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  width: 350px;
+  margin: 0.25rem;
+  transition: .5s;
+  font-size: 1.15rem;
+}
+
+.add{
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  width: 50px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: .5s;
+  margin: 0.25rem;
+}
+
+.add:hover{
+  opacity: 0.7;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 5%;
+}
+
+.item{
+  padding: 0.5rem;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 1.5rem;
+  }
+
+.item_input{
+  background: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 245px;
+  }
+
+.edit{
+  background: none;
+  outline: none;
+  border: none;
+  color: lime;
+  font-size: 1.4rem;
+  font-family: 'Hind', sans-serif;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.remove{
+  background: none;
+  outline: none;
+  border: none;
+  color: #E00;
+  font-size: 1.4rem;
+  font-family: 'Hind', sans-serif;
+  cursor: pointer;
+  }
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1192px) {
+  .yes {
+    margin-right: auto;
+    margin-left: 0;
+    display: none;
+  }
+
+}
+
+@media (max-width: 765px) {
+  .good{
+    padding-top: 0%;
+    padding-bottom: 3%;
+    padding-left: 0%;
+    padding-right: 7%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: cyan;
+    text-align: center;
+    display: none;
+    }
+  
+  .bad{
+    padding-top: 0%;
+    padding-bottom: 15%;
+    padding-left: 0%;
+    padding-right: 7%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: cyan;
+    text-align: center;
+    display: none;
+  }
+
+  .excellent {
+    padding-top: 0%;
+    padding-bottom: 3%;
+    padding-left: 0%;
+    padding-right: 7%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: cyan;
+    text-align: center;
+    display: none;
+  }
+
+  .top-section-left {
+    padding: 15% 7% 5%;
+  }
+}

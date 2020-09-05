@@ -1,0 +1,58 @@
+.section-1 {
+  padding: 10% 8% 7%;
+  text-align: center;
+  background-color: cornsilk;
+}
+
+.section-1 h4 {
+  padding: 3% 0% 0%;
+}
+
+hr {
+  border-style: none none dotted none;
+  color: gray;
+  border-width: 7px;
+  width: 7%;
+}
+
+.row {
+  margin: 0;
+  text-align: center;
+}
+
+.physical-intro {
+  padding: 5% 0%;
+  background-color: chocolate;
+}
+
+.physical-content, .mental-content {
+  padding: 5% 3% 3%;
+}
+
+.mental-intro {
+  padding: 5% 0%;
+  background-color: cadetblue;
+}
+
+.section-3 {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: darkturquoise;
+}
+
+.video {
+  padding-top: 60px;
+}
+
+/* Footer */
+
+footer {
+  padding: 5% 7%;
+  background-color: white;
+  text-align: center;
+}
+
+.footer-links {
+  padding: 0px 8px;
+}
+

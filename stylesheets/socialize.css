@@ -1,0 +1,58 @@
+body {
+  text-align: center;
+  background-color: cyan;
+}
+
+.intro {
+  padding: 5% 15%;
+  background-color: cyan;
+}
+
+#message-container {
+  width: 40%;
+  max-width: 1200px;
+  border-style: solid;
+  margin: auto;
+  margin-top: 30px;
+  text-align: left;
+}
+
+#message-container div {
+  background-color: rgb(124, 120, 120);
+  color: bisque;
+  padding: 2%;
+}
+
+#message-container div:nth-child(2n) {
+  background-color: darkslategrey;
+  text-align: right;
+}
+
+.input-area {
+  border-radius: 5px;
+  color: dodger;
+  background-color: transparent;
+  margin-bottom: 7%;
+}
+
+.things-to-do {
+  background-color: moccasin;
+  padding: 7% 10%;
+}
+
+.things-to-do-paragraph {
+  padding: 3% 7%;
+}
+
+/* Footer */
+
+footer {
+  padding: 5% 7%;
+  background-color: skyblue;
+  text-align: center;
+}
+
+.footer-links {
+  padding: 0px 8px;
+}
+

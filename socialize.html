@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socialize</title>
+  <link rel="stylesheet" href="font-awesome/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/socialize.css">
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="shortcut icon" type="image/png" href="https://emottawablog.com/wp-content/uploads/2018/09/iStock-Heart.png">
+</head>
+<body>
+
+  <!-- Navbar Contents -->
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: cyan;">
+    <img src="https://emottawablog.com/wp-content/uploads/2018/09/iStock-Heart.png" alt="logo" height="50px" style="margin-right: 15px;">
+    <a class="navbar-brand" href="index.html">infoCare</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="count.html">Community Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tips.html">Health Tips</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="socialize.html">Socialize</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donate.html">Donate</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Body Contents: -->
+
+  <div class="intro">
+    <img src="https://www.logisticsplus.net/wp-content/uploads/2019/07/Customer.png" alt="" height="200px"> <br><br><br>
+    <h1>Let's Socialize!</h1>
+    <h5>Socializing while in isolation is really hard. But on the other hand, it is really important to both mental and physcial health. Here, you can interact with your friends, help your community, discuss your contributions in your community, share your thoughts and help others.</h5>
+  </div>
+
+  <h4>Chat With Your Friends:</h4>
+  <div id="message-container"></div> <br>
+  <form id="send-container" action="">
+    <input class="input-area" type="text" id="message-input" placeholder="Type to send a message">
+    <button class="btn btn-outline-dark" type="submit" id="send-button">Send</button>
+  </form>
+
+  <div class="things-to-do">
+    <h1 style="padding-bottom: 40px;">Things To Do While in Quarantine</h1>
+    <h5>As COVID-19 continues to spread, individuals are highly encouraged, to wear a mask, social distance, and quarantine if exposed to someone with coronavirus. For most of us, being in quarantine is a new experience that can impact our mental health and emotional wellbeing. Here are a few things that you can do in Quarantine:</h5>
+    <br><br>
+    <ol style="text-align:center; list-style-position: inside;">
+      <h4 class="things-to-do-heading"><li>Learn a new skill</li></h4>
+      <p class="things-to-do-paragraph">So many interesting things to learn but so little time? No problem now. Edx offers free university courses—including from Harvard University, Massachusetts Institute of Technology, and University of California, Berkley—in hundreds of subjects. Brush up on skills for your job or take a course in something purely for fun, like astronomy or history. You don’t get official credit for them but you get to keep all the knowledge you learn.</p>
+      <h4 class="things-to-do-heading"><li>Try Yoga</li></h4>
+      <p class="things-to-do-paragraph">During this time, it's normal to be feeling more stressed than usual. Staying at home and being confined to your space can be difficult. Starting your day off with yoga has multiple benefits such as decreasing stress, relieving anxiety, promoting better sleep quality, and increasing strength. </p>
+      <h4 class="things-to-do-heading"><li>Write in a journal</li></h4>
+      <p class="things-to-do-paragraph">Sitting at home binge watching Tiger King on Netflix may not feel like you’re doing much, but you’re actually living through a major historical event that people will learn and talk about for generations after this is all over. Writing a journal will help you not just preserve your memories but will also help you process your feelings about this time that manages to feel simultaneously terrifying and immensely boring. You could also consider making it a gratitude journal.</p>
+      <h4 class="things-to-do-heading"><li>Learn a new language</li></h4>
+      <p class="things-to-do-paragraph">Want to know how to say, “quarantine stinks” in five other languages? Now is a great time to learn or practice a new language. Duolingo is an easy-to-use, totally free app that gives daily lessons in 35 different languages. You can pick a standard like English, Spanish, or Cantonese, or you can branch out with Navajo, Esperanto, and Klingon or High Valyrian.</p>
+      <h4 class="things-to-do-heading"><li>Take a virtual world tour</li></h4>
+      <p class="things-to-do-paragraph">Ever wanted to see the Alps up close? Hike Machu Picchu? Stroll through Barcelona? You can do all that without worrying about spreading disease through virtual tours—consider one of these virtual day trips you can now take online.</p>
+      <h4 class="things-to-do-heading"><li>Create some quarantine art</li></h4>
+      <p class="things-to-do-paragraph">Channel your feelings by doing something creative. Painting is a great way to express yourself, learn a new skill, and help you see ordinary things (like everything in your house you’ve been staring at for weeks) in a whole new way.</p>
+      <h4 class="things-to-do-heading"><li>Make new friends</li></h4>
+      <p class="things-to-do-paragraph">You don’t need to leave your house to make a new pal. A free app called Quarantine Chat is connecting thousands of strangers worldwide. Once you sign-up, you’ll get random calls throughout the day. Talk to your new friend about anything you like: your spring cleaning rituals, your new yeast starter, or your favourite binge-worthy show.</p>
+
+    </ol>
+  </div>
+  
+  <!-- Footer Settings: -->
+
+  <footer>
+    <img src="https://emottawablog.com/wp-content/uploads/2018/09/iStock-Heart.png" alt="footer" height="80px">
+    <h4 style="padding: 10px;">infoCare</h4>
+    <a class="footer-links" href="index.html">Home</a>
+    <a class="footer-links" href="count.html">Community Reports</a>
+    <a class="footer-links" href="tips.html">Health Tips</a>
+    <a class="footer-links" href="socialize.html">Socialize</a>
+    <a class="footer-links" href="donate.html"> Donate</a>
+  </footer>
+
+
+
+  <!-- Bootstrap CDN Links -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-- Javascript Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>
